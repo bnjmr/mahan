@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ir.aspacrm.my.app.mahanet.component.SquareCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layMainGroup"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="2.5dp"
+    android:layout_marginLeft="2.5dp"
+    android:layout_marginRight="2.5dp"
+    android:layout_marginTop="2.5dp"
+    android:clickable="true"
+    android:foreground="@drawable/ripple_list_item"
+    app:cardBackgroundColor="@color/back_items"
+    app:cardElevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ir.aspacrm.my.app.mahanet.component.PersianTextViewThin
+            android:id="@+id/txtGroupName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="نامشخص"
+            android:textColor="@color/txt_blue"
+            android:textSize="@dimen/size_font_small" />
+
+        <ImageView
+            android:id="@+id/img_current_service"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/ic_service_state"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+</ir.aspacrm.my.app.mahanet.component.SquareCardView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layMain"
+    android:layout_margin="6dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:background="@drawable/ic_charge_online"
+            android:id="@+id/imgImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:id="@+id/layCount"
+            android:layout_width="@dimen/size_layBack_notify_child_slide"
+            android:layout_height="@dimen/size_layBack_notify_child_slide"
+            android:gravity="right|top"
+            android:background="@drawable/circle_back_count"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ir.aspacrm.my.app.mahanet.component.PersianTextViewThin
+                android:id="@+id/txtCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="6"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:typeface="serif" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <ir.aspacrm.my.app.mahanet.component.PersianTextViewNormal
+        android:id="@+id/txtName"
+        android:layout_gravity="center"
+        android:text="test"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

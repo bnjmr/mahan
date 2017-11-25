@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ir.aspacrm.my.app.mahanet.component.PersianTextViewNormal
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="نظر سنجی" />
+
+    <ir.aspacrm.my.app.mahanet.component.PersianTextViewNormal
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="3dp"
+        android:background="#c30a0a0a" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcyOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layoutDirection="rtl"
+        android:minHeight="150dp">
+
+
+    </android.support.v7.widget.RecyclerView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_margin="3dp"
+        android:background="#c30a0a0a" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center"
+        android:layout_margin="6dp"
+        android:orientation="horizontal">
+
+
+        <ir.aspacrm.my.app.mahanet.component.CustomEditText
+            android:id="@+id/edtComment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/back_items"
+            android:hint=" توضیحات"
+            android:imeOptions="actionNext"
+            android:minHeight="35dp"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:lines="4"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_light_grey"
+            android:textSize="@dimen/size_font_very_very_small" />
+
+
+    </LinearLayout>
+
+    <ir.aspacrm.my.app.mahanet.component.PersianTextViewNormal
+        android:id="@+id/txtError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:gravity="right"
+        android:padding="6dp"
+        android:text=""
+        android:textColor="@color/red" />
+
+    <ir.aspacrm.my.app.mahanet.component.PersianTextViewNormal
+        android:id="@+id/txtDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:background="@color/orange"
+        android:gravity="center"
+        android:minWidth="90dp"
+        android:padding="4dp"
+        android:text="ثبت"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
+
+
+
